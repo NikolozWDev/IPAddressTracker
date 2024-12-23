@@ -48,100 +48,7 @@ a {
     animation-iteration-count: infinite;
     animation-duration: 5s;
 }
-@keyframes circle {
 
-    100% {
-        opacity: 0;
-        transform: translateY(100px) translateX(0px);
-    }
-}
-.c1 {
-    transform: translateX(300px);
-}
-.c2 {
-    transform: translateX(600px);
-}
-.c3 {
-    transform: translateX(-300px);
-}
-.c4 {
-    transform: translateX(-600px);
-}
-.c5 {
-    transform: translateX(200px);
-}
-.c6 {
-    transform: translateX(240px);
-}
-.c7 {
-    transform: translateX(-240px);
-}
-.c8 {
-    transform: translateX(-200px);
-}
-.c9 {
-    transform: translateX(700px) translateY(100px);
-}
-.c10 {
-    transform: translateX(-700px) translateY(40px);
-}
-.c11 {
-    transform: translateX(550px) translateY(34px);
-}
-.c12 {
-    transform: translateX(-550px) translateY(46px);
-}
-.c13 {
-    transform: translateX(630px) translateY(64px);
-}
-.c14 {
-    transform: translateX(280px) translateY(23px);
-}
-.c15 {
-    transform: translateX(310px) translateY(38px);
-}
-.c16 {
-    transform: translateX(-380px) translateY(64px);
-}
-.c17 {
-    transform: translateX(-260px) translateY(23px);
-}
-.c18 {
-    transform: translateX(-420px) translateY(38px);
-}
-.c19 {
-    transform: translateX(-220px) translateY(40px);
-}
-.c20 {
-    transform: translateX(-600px) translateY(80px);
-}
-.c21 {
-    transform: translateX(600px) translateY(70px);
-}
-.c22 {
-    transform: translateX(800px) translateY(30px);
-}
-.c23 {
-    transform: translateX(-800px) translateY(39px);
-}
-.c24 {
-    transform: translateX(850px) translateY(-20px);
-}
-.c25 {
-    transform: translateX(-850px) translateY(-25px);
-}
-.c26 {
-    transform: translateX(750px) translateY(25px);
-}
-.c27 {
-    transform: translateX(545px) translateY(41px);
-}
-.c28 {
-    transform: translateX(323px) translateY(-5px);
-}
-.c29 {
-    transform: translateX(310px) translateY(15px);
-}
 .primary-top {
     background-image: linear-gradient(rgba(95, 134, 242, 1), rgba(68, 61, 151, 1));
     padding: 30px 0px 30px 0px;
@@ -345,6 +252,17 @@ a {
     }
 }
 @media (max-width: 750px) {
+    .blur {
+        display: none;
+    }
+}
+@media (max-width: 1000px) {
+    .loading {
+        display: none;
+    }
+    .circle {
+        display: none;
+    }
     .blur {
         display: none;
     }
