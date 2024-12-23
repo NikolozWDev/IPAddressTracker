@@ -12,12 +12,166 @@ a {
     text-decoration: none;
 }
 
+
+
+
+.blur {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    background-color: rgb(112, 138, 231);
+    filter: blur(10px);
+    opacity: 0.5;
+}
+.b1 {
+    top: 0;
+    left: 0;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.b2 {
+    top: 0;
+    right: 0;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+
+
+.circle {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    animation-name: circle;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+@keyframes circle {
+
+    100% {
+        opacity: 0;
+        transform: translateY(100px) translateX(0px);
+    }
+}
+.c1 {
+    transform: translateX(300px);
+}
+.c2 {
+    transform: translateX(600px);
+}
+.c3 {
+    transform: translateX(-300px);
+}
+.c4 {
+    transform: translateX(-600px);
+}
+.c5 {
+    transform: translateX(200px);
+}
+.c6 {
+    transform: translateX(240px);
+}
+.c7 {
+    transform: translateX(-240px);
+}
+.c8 {
+    transform: translateX(-200px);
+}
+.c9 {
+    transform: translateX(700px) translateY(100px);
+}
+.c10 {
+    transform: translateX(-700px) translateY(40px);
+}
+.c11 {
+    transform: translateX(550px) translateY(34px);
+}
+.c12 {
+    transform: translateX(-550px) translateY(46px);
+}
+.c13 {
+    transform: translateX(630px) translateY(64px);
+}
+.c14 {
+    transform: translateX(280px) translateY(23px);
+}
+.c15 {
+    transform: translateX(310px) translateY(38px);
+}
+.c16 {
+    transform: translateX(-380px) translateY(64px);
+}
+.c17 {
+    transform: translateX(-260px) translateY(23px);
+}
+.c18 {
+    transform: translateX(-420px) translateY(38px);
+}
+.c19 {
+    transform: translateX(-220px) translateY(40px);
+}
+.c20 {
+    transform: translateX(-600px) translateY(80px);
+}
+.c21 {
+    transform: translateX(600px) translateY(70px);
+}
+.c22 {
+    transform: translateX(800px) translateY(30px);
+}
+.c23 {
+    transform: translateX(-800px) translateY(39px);
+}
+.c24 {
+    transform: translateX(850px) translateY(-20px);
+}
+.c25 {
+    transform: translateX(-850px) translateY(-25px);
+}
+.c26 {
+    transform: translateX(750px) translateY(25px);
+}
+.c27 {
+    transform: translateX(545px) translateY(41px);
+}
+.c28 {
+    transform: translateX(323px) translateY(-5px);
+}
+.c29 {
+    transform: translateX(310px) translateY(15px);
+}
 .primary-top {
     background-image: linear-gradient(rgba(95, 134, 242, 1), rgba(68, 61, 151, 1));
     padding: 30px 0px 30px 0px;
     height: 260px;
     display: flex;
     justify-content: center;
+    position: relative;
+}
+.for3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 90%;
+}
+.for2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 90%;
+    opacity: 0;
+    animation-name: for2;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes for2 {
+    100% {
+        opacity: 1;
+    }
 }
 .top {
     display: flex;
@@ -25,6 +179,40 @@ a {
     align-items: center;
     gap: 30px;
     width: 90%;
+    opacity: 0;
+    animation-name: top;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-duration: 2s;
+}
+@keyframes top {
+    50% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.loading {
+    width: 150px;
+    position: absolute;
+    animation-name: loading;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes loading {
+    50% {
+        transform: translateX(20px);
+        opacity: 0.5;
+    }
+    80% {
+        transform: translateX(-20px);
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
 }
 .top-1 {
     font-size: 25px;
@@ -134,5 +322,30 @@ a {
     }
     .primary-top {
         height: 160px;
+    }
+}
+@media (max-width: 1200px) {
+    .b1 {
+        width: 250px;
+        height: 150px;
+    }
+    .b2 {
+        width: 250px;
+        height: 150px;
+    }
+}
+@media (max-width: 950px) {
+    .b1 {
+        width: 150px;
+        height: 100%;
+    }
+    .b2 {
+        width: 150px;
+        height: 100%;
+    }
+}
+@media (max-width: 750px) {
+    .blur {
+        display: none;
     }
 }
